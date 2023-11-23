@@ -93,17 +93,22 @@
 }
 
 #calc-result {
+    overflow: auto ;
     display: flex;
     align-items: end;
     justify-content: end;
     padding: 10px;
     height: 75px;
+    max-height: 75px;
     /* background-color: antiquewhite; */
 }
 
 #calc-result p {
+    text-align: end;
     color: #d7d7d7;
     font-size: 40px;
+    height: 51px;
+    width: 288.800px;
 }
 
 #calc-body {
