@@ -1,60 +1,18 @@
-<div id="calc-container" cl>
-    <app-options class="hide">
-        
-    </app-options>
-    <div id="calc">
-        <div id="close-calc_btn"><i class="fa-solid fa-xmark"></i></div>
-        <header></header>
-        <div id="calc-header" (click)="moveCalc()" (mouseleave)="stopMoveCalc()">
-            <div id="scale-calc_btn">
-                <i id="big-square" class="fa-regular fa-square"></i>
-                <i id="small-square" class="fa-regular fa-square"></i>
-                <i id="arrow" class="fa-solid fa-arrow-down"></i>
-            </div>
-        </div>
-        <div id="calc-result">
-            <p><span id="result_input">0</span></p>
-        </div>
-        <div id="calc-body">
-            <div class="linha">
-                <div id="percent_btn" class="calc-button">%</div>
-                <div id="ce_btn" class="calc-button">CE</div>
-                <div id="c_btn" class="calc-button">C</div>
-                <div id="delete_btn" class="calc-button"><i class="fa-solid fa-delete-left"></i></div>
-            </div>
-            <div class="linha">
-                <div id="_btn" class="calc-button">1/x</div>
-                <div id="_btn" class="calc-button">x²</div>
-                <div id="_btn" class="calc-button">²<i class="fa-solid fa-square-root-variable"></i></div>
-                <div id="_btn" class="calc-button"><i class="fa-solid fa-divide"></i></div>
-            </div>
-            <div class="linha">
-                <div id="_btn" class="calc-button-number">7</div>
-                <div id="_btn" class="calc-button-number">8</div>
-                <div id="_btn" class="calc-button-number">9</div>
-                <div id="_btn" class="calc-button"><i class="fa-solid fa-x"></i></div>
-            </div>
-            <div class="linha">
-                <div id="_btn" class="calc-button-number">4</div>
-                <div id="_btn" class="calc-button-number">5</div>
-                <div id="_btn" class="calc-button-number">6</div>
-                <div id="_btn" class="calc-button"><i class="fa-solid fa-minus"></i></div>
-            </div>
-            <div class="linha">
-                <div id="_btn" class="calc-button-number">1</div>
-                <div id="_btn" class="calc-button-number">2</div>
-                <div id="_btn" class="calc-button-number">3</div>
-                <div id="_btn" class="calc-button"><i class="fa-solid fa-plus"></i></div>
-            </div>
-            <div class="linha">
-                <div id="plus-minus_btn" class="calc-button-number">+/-</div>
-                <div id="zero_btn" class="calc-button-number">0</div>
-                <div id="separete_btn" class="calc-button-number">,</div>
-                <div id="equals_btn" class="equals-color"><i class="fa-solid fa-equals"></i></div>
-            </div>
+<div id="calc-container" class="">
+    <div id="calc-container-header">
+        <h2>Calculadora</h2>
+        <div id="nav-bar-calc">
+            <i class="fa-solid"></i>
+            <i class="fa-solid"></i>
+            <i class="fa-solid"></i>
         </div>
     </div>
-    <app-choices class="hide">
-
-    </app-choices>
+    <div id="calc-container-body">
+        <app-options class="">
+        </app-options>
+        <app-keyboard class="">
+        </app-keyboard>
+        <app-choices class="hide">
+        </app-choices>
+    </div>
 </div>
