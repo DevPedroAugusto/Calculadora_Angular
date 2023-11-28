@@ -1,17 +1,20 @@
 <div id="calc-container" class="">
     <div id="calc-container-header">
-        <h2>Calculadora</h2>
+        <h2><i class="fa-solid fa-calculator"></i>Calculadora</h2>
         <div id="nav-bar-calc">
-            <i class="fa-solid"></i>
-            <i class="fa-solid"></i>
-            <i class="fa-solid"></i>
+            <i class="fa-solid fa-minus minimize"></i>
+            <i class="fa-regular fa-square maximize"></i>
+            <i class="fa-solid fa-x close"></i>
         </div>
     </div>
     <div id="calc-container-body">
         <app-options class="">
         </app-options>
-        <app-keyboard class="">
-        </app-keyboard>
+        <div id="calc-area">
+            <app-calc-navbar></app-calc-navbar>
+            <app-keyboard class="">
+            </app-keyboard>
+        </div>
         <app-choices class="hide">
         </app-choices>
     </div>
